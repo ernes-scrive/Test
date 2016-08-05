@@ -23,9 +23,7 @@ Components:<a name="Components"></a>
 
 ### Scrive Setup<a name="Setup"></a>
 
-After "Scrive Print to eSign Printer driver“ installer unpacks its
-content in a windows temp folder Scrive Setup (ScriveSetup.exe) is
-executed and does the following steps:
+After "Scrive Print to eSign Printer driver“ installer unpacks its content in a windows temp folder [Scrive Setup](#Setup)(ScriveSetup.exe) is executed and does the following steps:
 
 -   Check Windows OS version:
 
@@ -44,7 +42,7 @@ executed and does the following steps:
 
     If credentials are missing [Scrive LogIn](#LogIn)("ScriveLogIn.exe“) is executed and user can enter
     his/her Scrive credentials as email/password values.
-    OAuth([Personal Access Credentials](https://scrive.com/en/api#entry-159)) values are then obtained from Scrive DB and stored in “pdf995.ini“ configuration file.
+    OAuth([Personal Access Credentials](https://scrive.com/en/api#entry-159)) values are then obtained from Scrive and stored in “pdf995.ini“ configuration file.
     
 -   Open "Devices and Printers“ panel where user can see "Scrive Print to eSign Printer“
 
@@ -68,7 +66,7 @@ following when invoked:
     |Variable  |  | Description |
     |-----------|---|--------------------------------------------------------------------------------|
     | ScriveURL |  | URL of “Scrive middleware server“ |
-    | Oauth* |  | Scrive [Personal Access Credentials](https://scrive.com/en/api#entry-159)<br>If OAuth credentials are missing [Scrive LogIn](#LogIn)("ScriveLogIn.exe“) is executed and user can enter his/her Scrive credentials as email/password values. OAuth([Personal Access Credentials](https://scrive.com/en/api#entry-159)) values are then obtained from Scrive and stored in “pdf995.ini“ configuration file. Original file has to be sent again.|
+    | Oauth* |  | Scrive [Personal Access Credentials](https://scrive.com/en/api#entry-159)<br>If OAuth credentials are missing [Scrive LogIn](#LogIn)("ScriveLogIn.exe“) is executed and user can enter his/her Scrive credentials as email/password values. OAuth([Personal Access Credentials](https://scrive.com/en/api#entry-159)) values are then obtained from Scrive and stored in “pdf995.ini“ configuration file. Upload of original file needs to be repeated.|
     | Launch|  | Input file in case no command line argument is present<br>For backward compatibility with older version of "Scrive Print to eSign Printer driver“ based on [PDF995](http://www.pdf995.com/) software stack. |
     
     “pdf995.ini“ configuration file should be on the same location as Scrive Upload ("ScriveUpload.exe“) module.
