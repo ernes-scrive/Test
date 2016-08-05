@@ -1,7 +1,7 @@
 Transport tools
 ===============
 
-Set of tools for Windows "Scrive Print to eSign Printer driver“
+Set of tools for Windows "Scrive Print to eSign Printer“
 
 Components
 ----------
