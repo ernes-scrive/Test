@@ -21,12 +21,12 @@ provides at least these services:
     Installer
 -   Success and error pages
 
-| Components: |  | / |
+| Components: |  | ? |
 |-----------------|---|---------------------------------------------------------------------------------------------------------------------------------------------|
 |  |  |  |
-| Dependencies: |  | /OpenSSL signcode utility7z archiver |
+| Dependencies: |  | OpenSSL, signcode utility, 7z archiver, ... |
 |  |  |  |
-| Build process: |  | TeamCity:Other Stuff CentOS 7.x / PhoneFamily Middleware  Prerequisites: /Version: /Build command: Command LineCustom script: ./teamcity.sh |
+| Build process: |  | TeamCity:Other Stuff CentOS 7.x/PhoneFamily Middleware  <br>Prerequisites: / <br>Version: / <br>Build command: Command Line <br>Custom script: ./teamcity.sh |
 |  |  |  |
 | Deploy process: |  | / |
 |  |  |  |
@@ -71,12 +71,13 @@ Transport tools
 
 Set of tools for Windows "Scrive Print to eSign Printer driver“
 
-| Components: |  | Scrive SetupScrive UploadScrive LogIn |
+|  |  | Description |
 |-----------------|---|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Components: |  | Scrive Setup Scrive Upload Scrive LogIn |
 |  |  |  |
-| Dependencies: |  | Microsoft Visual Studio 2013Microsoft WTL/ATLMicrosoft Platform SDK |
+| Dependencies: |  | Microsoft Visual Studio 2013, Microsoft WTL/ATL, Microsoft Platform SDK |
 |  |  |  |
-| Build process: |  | TeamCity:Other Stuff Windows / Scrive PostScript Printer Driver Prerequisites:MSBuild v12 Toolset for .NET, Windows OSVersion:ScriveLogIn.rcScriveSetup.rcScriveUpload.rcBuild command:MSBuildBuild file: Scrive.sln |
+| Build process: |  | TeamCity project: Other Stuff Windows/Scrive PostScript Printer Driver <br>Prerequisites:MSBuild v12 Toolset for .NET, Windows OS <br>Version: ScriveLogIn.rc ScriveSetup.rc ScriveUpload.rc <br>Build command:MSBuild <br>Build file: Scrive.sln |
 |  |  |  |
 | Deploy process: |  | / - Manual copy of artifacts to "2. Installer“ |
 |  |  |  |
