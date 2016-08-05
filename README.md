@@ -3,6 +3,21 @@ Transport tools
 
 Set of tools for Windows "Scrive Print to eSign Printer“
 
+|  |  | Description |
+|-----------------|---|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Components](#Components): |  | [Scrive Setup](#Setup), [Scrive Upload](#Upload), [Scrive LogIn](#LogIn) |
+|  |  |  |
+| [Dependencies](#Dependencies): |  | Microsoft Visual Studio 2013, Microsoft [WTL](https://en.wikipedia.org/wiki/Windows_Template_Library)/[ATL](https://en.wikipedia.org/wiki/Active_Template_Library), Microsoft Platform SDK |
+|  |  |  |
+| Build process: |  | TeamCity project: Other Stuff Windows/Scrive PostScript Printer Driver <br>Prerequisites: MSBuild v12 Toolset for .NET, Windows OS <br>Version: [ScriveLogIn.rc](https://github.com/scrive/transporter/blob/master/login/ScriveUpload.rc) [ScriveSetup.rc](https://github.com/scrive/transporter/blob/master/setup/ScriveSetup.rc) [ScriveUpload.rc](https://github.com/scrive/transporter/blob/master/uploader/ScriveUpload.rc) <br>Build command: MSBuild <br>Build file: [scrive.sln](https://github.com/scrive/transporter/blob/master/scrive.sln) |
+|  |  |  |
+| [Deploy process:](#Deploy) |  | Manual copy of artifacts to [scrive-printer-windows](https://github.com/scrive/scrive-printer-windows) |
+|  |  |  |
+| Source: |  | [<https://github.com/scrive/transporter>](https://github.com/scrive/transporter) |
+|  |  |  |
+| Maintainer : |  | [<https://github.com/ernes32>](https://github.com/ernes32) |
+
+
 Components<a name="Components"></a>
 ----------
 
@@ -110,17 +125,3 @@ Maintainer:
 
 [<https://github.com/ernes32>](https://github.com/ernes32)
 <br><br><br>
-
-|  |  | Description |
-|-----------------|---|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Components](#Components): |  | [Scrive Setup](#Setup), [Scrive Upload](#Upload), [Scrive LogIn](#LogIn) |
-|  |  |  |
-| [Dependencies](#Dependencies): |  | Microsoft Visual Studio 2013, Microsoft [WTL](https://en.wikipedia.org/wiki/Windows_Template_Library)/[ATL](https://en.wikipedia.org/wiki/Active_Template_Library), Microsoft Platform SDK |
-|  |  |  |
-| Build process: |  | TeamCity project: Other Stuff Windows/Scrive PostScript Printer Driver <br>Prerequisites: MSBuild v12 Toolset for .NET, Windows OS <br>Version: [ScriveLogIn.rc](https://github.com/scrive/transporter/blob/master/login/ScriveUpload.rc) [ScriveSetup.rc](https://github.com/scrive/transporter/blob/master/setup/ScriveSetup.rc) [ScriveUpload.rc](https://github.com/scrive/transporter/blob/master/uploader/ScriveUpload.rc) <br>Build command: MSBuild <br>Build file: [scrive.sln](https://github.com/scrive/transporter/blob/master/scrive.sln) |
-|  |  |  |
-| [Deploy process:](#Deploy) |  | Manual copy of artifacts to [scrive-printer-windows](https://github.com/scrive/scrive-printer-windows) |
-|  |  |  |
-| Source: |  | [<https://github.com/scrive/transporter>](https://github.com/scrive/transporter) |
-|  |  |  |
-| Maintainer : |  | [<https://github.com/ernes32>](https://github.com/ernes32) |
