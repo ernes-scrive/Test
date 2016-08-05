@@ -108,7 +108,7 @@ Build file: Scrive.sln
 Deploy process:
 ---------------
 
-Manual copy of artifacts to "\[\#2. Installer|outline 2. Installer\]“
+Manual copy of artifacts to[ <https://github.com/scrive/scrive-printer-windows>](scrive-printer-windows)
 
 Maintainer:
 -----------
