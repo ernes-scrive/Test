@@ -87,26 +87,23 @@ Microsoft Platform SDK
 Build process:
 --------------
 
-TeamCity Project:
+TeamCity Project: Other Stuff Windows / Scrive PostScript Printer Driver 
 
-Other Stuff Windows / Scrive PostScript Printer Driver Prerequisites:
+Prerequisites: MSBuild v12 Toolset for .NET , Windows OS
 
-MSBuild v12 Toolset for .NET, Windows OS
+Version:
+[ScriveLogIn.rc](https://github.com/scrive/transporter/blob/master/login/ScriveUpload.rc)
+[ScriveSetup.rc](https://github.com/scrive/transporter/blob/master/setup/ScriveSetup.rc)
+[ScriveUpload.rc](https://github.com/scrive/transporter/blob/master/uploader/ScriveUpload.rc)
 
-Version:ScriveLogIn.rc
+Build command: MSBuild
 
-ScriveSetup.rc
-
-ScriveUpload.rc
-
-Build command:MSBuild
-
-Build file: Scrive.sln
+Build file: [scrive.sln](https://github.com/scrive/transporter/blob/master/scrive.sln)
 
 Deploy process:
 ---------------
 
-Manual copy of artifacts to[ <https://github.com/scrive/scrive-printer-windows>](scrive-printer-windows)
+Manual copy of artifacts to[scrive-printer-windows](https://github.com/scrive/scrive-printer-windows)
 
 Maintainer:
 -----------
