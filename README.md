@@ -42,7 +42,7 @@ executed and does the following steps:
 
     If older PDF995 printer is present pdf995.ini file is overrided with that one
 
-    If credentials are missing Scrive LogIn("ScriveLogIn.exe“) is executed and user can enter
+    If credentials are missing [Scrive LogIn](#LogIn)("ScriveLogIn.exe“) is executed and user can enter
     his/her Scrive credentials as email/password values.
     OAuth(Personal token) values are then obtained from Scrive DB and stored in “pdf995.ini“ configuration file.
     
@@ -64,19 +64,12 @@ command line input argument as a path to an input file and does the
 following when invoked:
 
 -   Read input parameters from “pdf995.ini“ file:
-    
-    “ScriveURL“ variable contains the URL of “Scrive middleware server“
 
-    “OAuth“ variables (OauthClientKey/Secret, OauthTokenKey/Secret ) 
-    contain a Scrive personal token credentials
-    
-    If OAuth credentials are missing Scrive LogIn("ScriveLogIn.exe“) is executed and user can enter his/her Scrive credentials as
-    email/password values. OAuth(Personal token) values are then obtained from Scrive DB and stored in “pdf995.ini“ configuration
-    file and the file has to be sent again.
-    
-    “Launch“ variable specifies the input file in case if no command line input argument is available. 
-    This is done for backward compatibility with older version of "Scrive Print to eSign Printer driver“ based on
-    [PDF995](http://www.pdf995.com/) software stack.
+    |Variable  |  | Description |
+    |-----------|---|--------------------------------------------------------------------------------|
+    | ScriveURL |  | URL of “Scrive middleware server“ |
+    | Oauth* |  | Scrive personal token credentials.<br>If OAuth credentials are missing [Scrive LogIn](#LogIn)("ScriveLogIn.exe“) is executed and user can enter his/her Scrive credentials as email/password values. OAuth(Personal token) values are then obtained from Scrive DB and stored in “pdf995.ini“ configuration file and the file has to be sent again.|
+    | Launch|  | input file in case if no command line argument is available. <br>For backward compatibility with older version of "Scrive Print to eSign Printer driver“ based on [PDF995](http://www.pdf995.com/) software stack. |
     
     “pdf995.ini“ configuration file should be on the same location as Scrive Upload ("ScriveUpload.exe“) module.
     
