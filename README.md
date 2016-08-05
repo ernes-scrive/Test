@@ -103,7 +103,7 @@ Build file: [scrive.sln](https://github.com/scrive/transporter/blob/master/scriv
 Deploy process:
 ---------------
 
-Manual copy of artifacts to[scrive-printer-windows](https://github.com/scrive/scrive-printer-windows)
+Manual copy of artifacts to [scrive-printer-windows](https://github.com/scrive/scrive-printer-windows)
 
 Maintainer:
 -----------
