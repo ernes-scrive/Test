@@ -51,7 +51,7 @@ executed and does the following steps:
 ### Scrive LogIn<a name="LogIn"></a>
 
 Module used to authenticate with Scrive credentials(email/password) against Scrive.com and fetches OAuth(Personal token) values which are
-then stored in “pdf955.ini“ configuration file residnig on the same location as Scrive LogIn("ScriveLogIn.exe“) module.
+then stored in “pdf955.ini“ configuration file residinig on the same location as Scrive LogIn("ScriveLogIn.exe“) module.
 
 Successfuly obtained values will overwrite one stored in “pdf955.ini“ file.
 
