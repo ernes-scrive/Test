@@ -22,6 +22,7 @@ executed and does the following steps:
 
 -   Authenticates User:
     OAuth credentials can be provided within installer in pdf995.ini file
+
     If older PDF995 printer is present pdf995.ini file is overrided with that one
 
     If credentials are missing Scrive LogIn("ScriveLogIn.exe“) is executed and user can enter
@@ -47,27 +48,32 @@ Module used to send files to “Scrive middleware server“ accepts a single
 command line input argument as a path to an input file and does the
 following when invoked:
 
--   Read input parameters from “pdf995.ini“
-    [file:“ScriveURL](file:“ScriveURL)“ variable contains the URL of
-    “Scrive middleware server““OAuth“ variables (OauthClientKey/Secret,
-    OauthTokenKey/Secret ) contain a Scrive personal token credentialsIf
-    OAuth credentials are missing Scrive LogIn("ScriveLogIn.exe“) is
-    executed and user can enter his/her Scrive credentials as
-    email/password values. OAuth(Personal token) values are then
-    obtained from Scrive DB and stored in “pdf995.ini“ configuration
-    file and the file has to be sent again.“Launch“ variable specifies
-    the input file in case if no command line input argument
-    is available. This is done for backward compatibility with older
-    version of "Scrive Print to eSign Printer driver“ based on
-    [PDF995](http://www.pdf995.com/) software stack.\
-    “pdf995.ini“ configuration file should be on the same location as
-    Scrive Upload ("ScriveUpload.exe“) module.
--   Send the input file to ScriveURL(“Scrive middleware server“):Read
-    the input file to a data buffer.Generate “Authorization“ HTTP header
-    from OAuth variables.Send the data over HTTP PUT request
-    to ScriveURL.
--   Open the default web browser:If the file was successful sent read
-    the “X-Open-Browser“ response header and open it in default
+-   Read input parameters from “pdf995.ini“ file:
+    
+    “ScriveURL“ variable contains the URL of “Scrive middleware server“
+
+    “OAuth“ variables (OauthClientKey/Secret, OauthTokenKey/Secret ) 
+    contain a Scrive personal token credentials
+    
+    If OAuth credentials are missing Scrive LogIn("ScriveLogIn.exe“) is executed and user can enter his/her Scrive credentials as
+    email/password values. OAuth(Personal token) values are then obtained from Scrive DB and stored in “pdf995.ini“ configuration
+    file and the file has to be sent again.
+    
+    “Launch“ variable specifies the input file in case if no command line input argument is available. 
+    This is done for backward compatibility with older version of "Scrive Print to eSign Printer driver“ based on
+    [PDF995](http://www.pdf995.com/) software stack.
+    
+    “pdf995.ini“ configuration file should be on the same location as Scrive Upload ("ScriveUpload.exe“) module.
+    
+-   Send the input file to ScriveURL(“Scrive middleware server“):
+
+    Read the input file to a data buffer.
+    Generate “Authorization“ HTTP header from OAuth variables.
+    Send the data over HTTP PUT request to ScriveURL.
+    
+-   Open the default web browser:
+
+    If the file was successful sent read the “X-Open-Browser“ response header and open it in default
     web browser.
 
 Dependencies:
