@@ -32,11 +32,11 @@ executed and does the following steps:
     If 64-bit version of OS is found “ScriveSetup64.exe“ binary is executed to install suitable version
     of printer driver components
 
--   Installs and configures:
+-   Install and configure:
 
     Scrive Port Monitor, Scrive Printer Port, Scrive Printer Driver, Scrive transporter tools (uploader,login, ..)
 
--   Authenticates User:
+-   Authenticate User:
 
     OAuth credentials can be provided within installer in pdf995.ini file
 
@@ -46,7 +46,7 @@ executed and does the following steps:
     his/her Scrive credentials as email/password values.
     OAuth(Personal token) values are then obtained from Scrive DB and stored in “pdf995.ini“ configuration file.
     
--   Opens "Devices and Printers“ panel where user can see "Scrive Print to eSign Printer“
+-   Open "Devices and Printers“ panel where user can see "Scrive Print to eSign Printer“
 
 ### Scrive LogIn<a name="LogIn"></a>
 
@@ -82,9 +82,9 @@ following when invoked:
     
 -   Send the input file to ScriveURL(“Scrive middleware server“):
 
-    Read the input file to a data buffer.
-    Generate “Authorization“ HTTP header from OAuth variables.
-    Send the data over HTTP PUT request to ScriveURL.
+    - Read the input file to data buffer
+    - Generate “Authorization“ HTTP header from OAuth variables
+    - Send the data with HTTP PUT request to ScriveURL
     
 -   Open the default web browser:
 
