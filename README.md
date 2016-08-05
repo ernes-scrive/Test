@@ -12,15 +12,17 @@ After "Scrive Print to eSign Printer driver“ installer unpacks its
 content in a windows temp folder Scrive Setup (ScriveSetup.exe) is
 executed and does the following steps:
 
--   Check Windows OS version:If 64-bit version of OS is found
-    “ScriveSetup64.exe“ binary is executed to install suitable version
+-   Check Windows OS version:
+
+    If 64-bit version of OS is found “ScriveSetup64.exe“ binary is executed to install suitable version
     of printer driver components
 
--   Installs and configures: Scrive Port Monitor, Scrive Printer Port,
-    Scrive Printer Driver, Scrive transporter tools (uploader,
-    login, ..)
+-   Installs and configures:
+
+    Scrive Port Monitor, Scrive Printer Port, Scrive Printer Driver, Scrive transporter tools (uploader,login, ..)
 
 -   Authenticates User:
+
     OAuth credentials can be provided within installer in pdf995.ini file
 
     If older PDF995 printer is present pdf995.ini file is overrided with that one
@@ -29,18 +31,14 @@ executed and does the following steps:
     his/her Scrive credentials as email/password values.
     OAuth(Personal token) values are then obtained from Scrive DB and stored in “pdf995.ini“ configuration file.
     
--   Opens "Devices and Printers“ panel where user can see "Scrive Print
-    to eSign Printer“
+-   Opens "Devices and Printers“ panel where user can see "Scrive Print to eSign Printer“
 
 ### Scrive LogIn
 
-Module used to authenticate with Scrive credentials(email/password)
-against Scrive.com and fetches OAuth(Personal token) values which are
-then stored in “pdf955.ini“ configuration file residnig on the same
-location as Scrive LogIn("ScriveLogIn.exe“) module.
+Module used to authenticate with Scrive credentials(email/password) against Scrive.com and fetches OAuth(Personal token) values which are
+then stored in “pdf955.ini“ configuration file residnig on the same location as Scrive LogIn("ScriveLogIn.exe“) module.
 
-Successfuly obtained values will overwrite one stored in “pdf955.ini“
-file.
+Successfuly obtained values will overwrite one stored in “pdf955.ini“ file.
 
 ### Scrive Upload
 
