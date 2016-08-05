@@ -15,16 +15,19 @@ executed and does the following steps:
 -   Check Windows OS version:If 64-bit version of OS is found
     “ScriveSetup64.exe“ binary is executed to install suitable version
     of printer driver components
+
 -   Installs and configures: Scrive Port Monitor, Scrive Printer Port,
     Scrive Printer Driver, Scrive transporter tools (uploader,
     login, ..)
--   Authenticates User:OAuth credentials can be provided within
-    installer in pdf995.ini fileIf older PDF995 printer is present
-    pdf995.ini file is overrided with that oneIf credentials are missing
-    Scrive LogIn("ScriveLogIn.exe“) is executed and user can enter
-    his/her Scrive credentials as email/password
-    values.OAuth(Personal token) values are then obtained from Scrive DB
-    and stored in “pdf995.ini“ configuration file.
+
+-   Authenticates User:
+    OAuth credentials can be provided within installer in pdf995.ini file
+    If older PDF995 printer is present pdf995.ini file is overrided with that one
+
+    If credentials are missing Scrive LogIn("ScriveLogIn.exe“) is executed and user can enter
+    his/her Scrive credentials as email/password values.
+    OAuth(Personal token) values are then obtained from Scrive DB and stored in “pdf995.ini“ configuration file.
+    
 -   Opens "Devices and Printers“ panel where user can see "Scrive Print
     to eSign Printer“
 
